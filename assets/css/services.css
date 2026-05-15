@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.faculty-hero {
+    padding: 60px 20px 20px;
+    text-align: center;
+}
+
+.hero-title h1 {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.2;
+}
+
+
+.faculty-content {
+    width: 82%;
+    max-width: 1200px;
+    margin: 50px auto;
+
+    flex: 1;
+
+}
+
+
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* BUTTONS */
+.service-btn {
+    background-color: burlywood;
+    padding: 18px 28px;
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.service-btn:hover {
+    transform: translateY(-4px);
+    background-color: #d9b382;
+}

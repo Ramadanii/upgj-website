@@ -1,0 +1,101 @@
+/*HERO SECTION*/
+
+.faculty-hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+
+.faculty-hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/*CONTENT SECTION*/
+
+.faculty-content {
+    width: 82%;
+    max-width: 1200px;
+    margin: 70px auto;
+    background: white;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    line-height: 1.9;
+    box-sizing: border-box;
+}
+
+
+/* HEADINGS */
+
+.faculty-content h1,
+.faculty-content h2,
+.faculty-content h3 {
+    color: #22003d;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+
+.faculty-content p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+
+.faculty-content ul {
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
+
+.faculty-content li {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+/* RESPONSIVE*/
+
+@media (max-width: 992px) {
+    .hero-title h1 {
+        font-size: 48px;
+        max-width: 90%;
+    }
+
+    .faculty-content {
+        width: 90%;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title h1 {
+        font-size: 36px;
+    }
+
+    .faculty-content {
+        width: 92%;
+        padding: 30px;
+    }
+
+    .faculty-content p,
+    .faculty-content li {
+        font-size: 16px;
+    }
+}

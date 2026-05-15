@@ -1,0 +1,409 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    overflow-x: hidden;
+}
+
+
+/* NAVBAR*/
+
+nav {
+
+    position: fixed;
+
+    top: 25px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 850px;
+
+    z-index: 9999;
+}
+
+
+/*LOGO*/
+
+.logo {
+    display: none;
+}
+
+
+/* NAV LINKS*/
+
+.nav-links {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    padding: 10px 15px;
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/*NAV ITEMS */
+
+.nav-item {
+
+    position: relative;
+
+    flex: 1;
+
+    text-align: center;
+}
+
+
+/* LINKS*/
+
+.nav-links a {
+
+    text-decoration: none;
+
+    display: block;
+
+    padding: 22px 15px;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+    border-radius: 12px;
+}
+
+
+.nav-links a:hover {
+
+    background: rgba(255, 255, 255, 0.12);
+
+    color: black;
+}
+
+nav.scrolled .nav-links {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+nav.scrolled .nav-links a {
+    color: #111827 !important;
+}
+
+nav.scrolled .nav-links a:hover {
+    color: #6d28d9 !important;
+    background: rgba(109, 40, 217, 0.08);
+}
+
+
+#megaMenu {
+
+    position: fixed;
+
+    top: 115px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 350px;
+
+    background: white;
+
+    display: none;
+
+    padding: 15px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+
+    z-index: 99999;
+
+    border-top: 5px solid #6d28d9;
+
+    animation: fadeDown 0.2s ease;
+}
+
+
+
+
+#megaMenu .menu-grid {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+
+
+#megaMenu .item {
+
+    padding: 15px;
+
+    font-size: 16px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+
+    color: #111;
+
+    text-decoration: none;
+
+    font-weight: 500;
+}
+
+
+#megaMenu .item:hover {
+
+    background: #f3f0ff;
+
+    color: #6d28d9;
+
+    transform: translateX(8px);
+}
+
+
+/* HERO */
+
+.hero {
+
+    height: 100vh;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)),
+        url("../images/upgj.PNG");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 60px;
+
+    color: white;
+
+    position: relative;
+
+    box-sizing: border-box;
+}
+
+
+/*  HERO CONTENT*/
+
+.hero-content h1 {
+
+    font-size: 70px;
+
+    width: 700px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-content p {
+
+    font-size: 22px;
+
+    width: 600px;
+
+    line-height: 1.6;
+}
+
+
+.hero-content button {
+
+    padding: 15px 35px;
+
+    border: none;
+
+    background: #6d28d9;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+
+    margin-top: 20px;
+
+    transition: 0.3s ease;
+}
+
+
+.hero-content button:hover {
+
+    background: #5b21b6;
+}
+
+
+/*GENERAL SECTIONS*/
+
+.about,
+.faculties,
+.news,
+.events,
+.contact {
+
+    padding: 100px 60px;
+
+    box-sizing: border-box;
+}
+
+
+/* TITLES*/
+
+.about h2,
+.faculties h2,
+.news h2,
+.events h2,
+.contact h2 {
+
+    font-size: 42px;
+
+    margin-bottom: 20px;
+}
+
+.about p {
+
+    margin-top: 50px;
+
+    line-height: 1.8;
+}
+
+
+
+
+.faculty-container,
+.news-container {
+
+    display: flex;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+    margin-top: 40px;
+}
+
+
+/* CARDS */
+
+.faculty-card,
+.news-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+    flex: 1;
+
+    min-width: 250px;
+
+    transition: 0.3s ease;
+}
+
+
+.faculty-card:hover,
+.news-card:hover {
+
+    transform: translateY(-8px);
+}
+
+
+.faculty-card {
+    cursor: pointer;
+}
+
+
+.event-box {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+    margin-top: 30px;
+}
+
+
+.contact {
+
+    background: #22003d;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+
+
+footer {
+
+    background: white;
+
+    color: #111;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+
+
+@keyframes fadeDown {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(-50%) translateY(-10px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(-50%) translateY(0);
+    }
+}
